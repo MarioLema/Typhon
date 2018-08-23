@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+nav {
+	width: 100%;
+	background: white;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border-bottom: solid 1px #222b12;
+	margin: auto;
+	position: fixed;
+	transition: box-shadow 200ms;
+	z-index: 20;
+}
+nav:hover{
+	box-shadow: 0px 1px 6px 1px rgb(3, 16, 9),0px 2px 5px 0px rgb(19, 91, 49);
+}
+#logo {
+	width: 280px;
+}
+#main-menu{
+	margin: 0;
+	color: #0d4023;
+}
+#main-menu > a{
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: 'Mina', sans-serif;
+    font-size: 1.1em;
+}
+/*==================================================*/
+#image-container{
+	width: 100%;
+	position: relative;
+}
+.screen{
+	width: 100%;
+	height: 100vh;
+}
+#arachne-screen{
+	background: whitesmoke url("images/arachne-screen.png") no-repeat scroll 50% 50% / cover
+}
+.screen-description {
+	left: 55%;
+	top: 25%;
+	position: absolute;
+	width: 30%;
+	font-family: 'Catamaran', sans-serif;
+	color: #03180e;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	height: 35%;
+	justify-content: space-between;
+	padding: 70px 20px 40px 20px;
+}
+.screen-description > h4{
+	text-align: justify;
+	line-height: 1.5em;
+}
+.discover-link {
+	text-decoration: none;
+	color: #05170d;
+	align-self: center;
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 1px;
+	margin-top: 30px;
+}
+.discover-link >p{
+	display: inline;
+	margin-right: 15px;
+	
+}
+.discover-link > i {
+	border-radius: 100%;
+	font-style: normal;
+	color: #8caa16;
+}
+
+/*=================================================*/
+#carousel-loader {
+	width: 15%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#carousel-loader > div {
+	width: 10px;
+	height: 26px;
+	background: #4d4d4d;
+	margin: 6px;
+	transform: skewX(162deg);
+	box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.49);
+}
+
+/*=======================================*/
+.menu-icon{
+	width: 1em;
+}
+#access-menu > div{
+	display: inline;
+	margin-left: 10px;
+}
+.carousel-direction-arrow{
+	width: 5em;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	opacity: 0.3;
+}
+.carousel-direction-arrow:last-of-type{
+	right:0;
+}
+/*============================================*/
+#product-highlights {
+	width: 100%;
+	height: 40vh;
+	display: grid;
+	grid-template: 1fr 6fr/ repeat(4, 1fr);
+	grid-gap: 0.5em;
+	margin: auto;
+	background: #080014;
+	padding: 0 0.5em 0.5em;
+	color: #888;
+}
+#product-highlights > h1 {
+	grid-column: 1/-1;
+	grid-row: 1/1;
+	justify-self: center;
+	font-family: 'Catamaran', sans-serif;
+	margin-top: 10px;
+	grid-gap: 1em;
+}
+#product-highlights > div{
+	border: solid #fff3 1px;
+	border-radius: 1px;
+}
+#product-highlights > div:nth-of-type(1){
+	background: url(images/laptop.png) no-repeat;
+	 background-size: contain;
+	
+}
+#product-highlights > div:nth-of-type(2){
+	background: url(images/software-keyboard.png) no-repeat;
+	 background-size: contain;
+	
+}
+#product-highlights > div:nth-of-type(3){
+	background: url(images/mouse-side.png) no-repeat;
+	 background-size: contain;
+	
+}
+#product-highlights > div:nth-of-type(4){
+	background: url(images/headset.png) no-repeat;
+	 background-size: contain;
+	
+}
