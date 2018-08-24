@@ -1,249 +1,299 @@
-*{
-	margin: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Catamaran", sans-serif;
+  background: #75e4b333;
 }
 nav {
-	width: 100%;
-	background: white;
-	height: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	border-bottom: solid 1px #222b12;
-	margin: auto;
-	position: fixed;
-	transition: box-shadow 200ms;
-	z-index: 20;
+  width: 100%;
+  background: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 1px #222b12;
+  margin: auto;
+  position: fixed;
+  transition: box-shadow 200ms;
+  z-index: 20;
 }
-nav:hover{
-	box-shadow: 0px 0px 6px 1px rgb(3, 16, 9),0px 1px 5px 0px rgb(19, 91, 49);
+nav:hover {
+  box-shadow: 0px 0px 6px 1px rgb(3, 16, 9), 0px 1px 5px 0px rgb(19, 91, 49);
 }
 #logo {
-	width: 280px;
+  width: 280px;
 }
-#main-menu{
-	margin: 0;
-	color: #0d4023;
+#main-menu {
+  margin: 0;
+  color: #0d4023;
 }
-#main-menu > a{
-    padding-right: 50px;
-    padding-left: 50px;
-    font-family: 'Mina', sans-serif;
-    font-size: 1.1em;
+#main-menu > a {
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: "Mina", sans-serif;
+  font-size: 1.1em;
 }
 /*==================================================*/
-#image-container{
-	width: 100%;
-	position: relative;
+#image-container {
+  width: 100%;
+  position: relative;
 }
-.screen{
-	width: 100%;
-	height: 90vh;
+.screen {
+  width: 100%;
+  height: 90vh;
 }
-#arachne-screen{
-	background: whitesmoke url("images/arachne-screen.png") no-repeat scroll 50% 50% / cover
+#arachne-screen {
+  background: whitesmoke url("images/arachne-screen.png") no-repeat scroll 50%
+    50% / cover;
 }
 .screen-description {
-	left: 55%;
-	top: 25%;
-	position: absolute;
-	width: 30%;
-	font-family: 'Catamaran', sans-serif;
-	color: #03180e;
-	opacity: 0.8;
-	display: flex;
-	flex-direction: column;
-	height: 35%;
-	justify-content: space-between;
-	padding: 70px 20px 40px 20px;
+  left: 55%;
+  top: 25%;
+  position: absolute;
+  width: 30%;
+  font-family: "Catamaran", sans-serif;
+  color: #03180e;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: space-between;
+  padding: 70px 20px 40px 20px;
 }
-.screen-description > h4{
-	text-align: justify;
-	line-height: 1.5em;
+.screen-description > h4 {
+  text-align: justify;
+  line-height: 1.5em;
 }
 .discover-link {
-	text-decoration: none;
-	color: #05170d;
-	align-self: center;
-	padding: 10px;
-	border-radius: 5px;
-	border: solid 1px;
-	margin-top: 30px;
+  text-decoration: none;
+  color: #05170d;
+  align-self: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px;
+  margin-top: 30px;
 }
-.discover-link >p{
-	display: inline;
-	margin-right: 15px;
-	
+.discover-link > p {
+  display: inline;
+  margin-right: 15px;
 }
 .discover-link > i {
-	border-radius: 100%;
 	font-style: normal;
-	color: #8caa16;
+	color: #fcba04;
 }
 
 /*=================================================*/
 #carousel-loader {
-	width: 15%;
-	height: 50px;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	right: 50%;
-	transform: translate(-50%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 15%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #carousel-loader > div {
-	width: 10px;
-	height: 26px;
-	background: #4d4d4d;
-	margin: 6px;
-	transform: skewX(162deg);
-	box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.49);
+  width: 10px;
+  height: 26px;
+  background: #4d4d4d;
+  margin: 6px;
+  transform: skewX(162deg);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.49);
 }
 
 /*=======================================*/
-.menu-icon{
-	width: 1em;
+.menu-icon {
+  width: 1em;
 }
-#access-menu > div{
-	display: inline;
-	margin-left: 10px;
+#access-menu > div {
+  display: inline;
+  margin-left: 10px;
 }
-.carousel-direction-arrow{
-	width: 4em;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	opacity: 0.2;
-	transition:opacity 200ms;
+.carousel-direction-arrow {
+  width: 4em;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  opacity: 0.2;
+  transition: opacity 200ms;
 }
-.carousel-direction-arrow:hover{
-	opacity:0.5;
+.carousel-direction-arrow:hover {
+  opacity: 0.5;
 }
-.carousel-direction-arrow:last-of-type{
-	right:0;
+.carousel-direction-arrow:last-of-type {
+  right: 0;
 }
 /*============================================*/
 #product-highlights {
-	width: 100%;
-	height: 40vh;
-	display: grid;
-	grid-template: 1fr 6fr/ repeat(4, 1fr);
-	grid-gap: 0.5em;
-	margin: auto;
-	background: black;
-	padding: 0 0.5em 0.5em;
-	color: #fbfcfb;
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  grid-template: 1fr 6fr / repeat(4, 1fr);
+  grid-gap: 0.5em;
+  margin: auto;
+  background: black;
+  padding: 0 0.5em 0.5em;
+  color: #fbfcfb;
 }
 #product-highlights > h1 {
-	grid-column: 1/-1;
-	grid-row: 1/1;
-	justify-self: center;
-	font-family: 'Catamaran', sans-serif;
-	margin-top: 10px;
-	grid-gap: 1em;
+  grid-column: 1/-1;
+  grid-row: 1/1;
+  justify-self: center;
+  font-family: "Catamaran", sans-serif;
+  margin-top: 10px;
+  grid-gap: 1em;
 }
 .highlight-box {
-	/* border: solid #38ce1b33 1px; */
-	border-radius: 1px;
-	/* box-shadow: 0px 0px 3px 1px #38ce1b33; */
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: #fffc;
-	font-family: 'Catamaran', sans-serif;
-	transition: filter 200ms;
+  /* border: solid #38ce1b33 1px; */
+  border-radius: 1px;
+  /* box-shadow: 0px 0px 3px 1px #38ce1b33; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fffc;
+  font-family: "Catamaran", sans-serif;
+  transition: filter 200ms;
 }
-.highlight-box:hover{
-	filter:grayscale(85%);
+.highlight-box:hover {
+  filter: grayscale(85%);
 }
-.highlight-box:nth-of-type(1){
-	background: url(images/laptop.png) no-repeat;
-	 background-size: contain;
-	
+.highlight-box:nth-of-type(1) {
+  background: url(images/laptop.png) no-repeat;
+  background-size: contain;
 }
-.highlight-box:nth-of-type(2){
-	background: url(images/software-keyboard.png) no-repeat;
-	 background-size: contain;
-	
+.highlight-box:nth-of-type(2) {
+  background: url(images/software-keyboard.png) no-repeat;
+  background-size: contain;
 }
-.highlight-box:nth-of-type(3){
-	background: url(images/mouse-side.png) no-repeat;
-	 background-size: contain;
-	
+.highlight-box:nth-of-type(3) {
+  background: url(images/mouse-side.png) no-repeat;
+  background-size: contain;
 }
-.highlight-box:nth-of-type(4){
-	background: url(images/headset.png) no-repeat;
-	 background-size: contain;
-	
+.highlight-box:nth-of-type(4) {
+  background: url(images/headset.png) no-repeat;
+  background-size: contain;
 }
 .highlight-description {
-	background: #0006;
-	height: 50%;
-	border-top: solid #ffffff1a 1px;
-	border-bottom: solid #ffffff1a 1px;
+  background: #0006;
+  height: 50%;
+  border-top: solid #ffffff1a 1px;
+  border-bottom: solid #ffffff1a 1px;
 }
 /*======================================*/
 #network-section {
-	border: solid black 5px;
-	margin: auto;
-	width: 80%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 100px 400px 200px 500px 400px 200px;
-	grid-template-areas:
-	"h1-head h1-head h1-head"
-	"box1 box1 box2"
-	"box3 box4 box5"
-	"box6 box6 box6"
-	"box7 box8 box8"
-	"box9 box10 box11";
-	align-items: center;
-	grid-gap: 1em;
-
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 70px 300px 200px 500px 250px 300px;
+  grid-template-areas:
+    "h1-head h1-head h1-head"
+    "box1 box1 box2"
+    "box3 box4 box5"
+    "box6 box6 box6"
+    "box7 box8 box8"
+    "box9 box9 box9";
+  align-items: center;
+  grid-gap: 1em;
 }
-.news-box{
+.news-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.news-box > div{
 	width: 100%;
 	height: 100%;
-	border: solid red 1px;
+	transition: all 1500ms;
+  }
+.news-box > div:hover{
+	transform: scale(1.1);
+  }
+#network-section > h1 {
+  grid-area: h1-head;
+  text-align: center;
 }
-#network-section > h1{
-grid-area: h1-head;
-	text-align: center;
+.news-box:nth-of-type(1) {
+  grid-area: box1;
 }
-.news-box:nth-of-type(1){
-grid-area: box1
+.news-box:nth-of-type(1) > div{
+	background: url("images/motherboard.png");
+	background-size: cover;
+	background-position: center;
+  }
+.news-box:nth-of-type(2) {
+  grid-area: box2;
 }
-.news-box:nth-of-type(2){
-grid-area: box2
+.news-box:nth-of-type(2) > div{
+	background: url("images/amd-fx.png");
+	background-size: cover;
+	background-position: bottom;
+  }
+.news-box:nth-of-type(3) {
+  grid-area: box3;
 }
-.news-box:nth-of-type(3){
-grid-area: box3
+.news-box:nth-of-type(3) > div{
+  background: url("images/closing-laptop.png");
+  background-size: cover;
 }
-.news-box:nth-of-type(4){
-grid-area: box4
+.news-box:nth-of-type(4) {
+  grid-area: box4;
 }
-.news-box:nth-of-type(5){
-grid-area: box5
+.news-box:nth-of-type(4) > div{
+  background: url("images/e-games.png");
+  background-size: cover;
+  background-position: center;
 }
-.news-box:nth-of-type(6){
-grid-area: box6
 }
-.news-box:nth-of-type(7){
-grid-area: box7
+.news-box:nth-of-type(5) {
+  grid-area: box5;
 }
-.news-box:nth-of-type(8){
-grid-area: box8
+.news-box:nth-of-type(5) > div{
+   background: url("images/gamer-playing.png");
+  background-size: cover;
+  background-position: center;
 }
-.news-box:nth-of-type(9){
-grid-area: box9
+.news-box:nth-of-type(6) {
+  grid-area: box6;
 }
-.news-box:nth-of-type(10){
-grid-area: box10
+.news-box:nth-of-type(6) > div{
+  background: url("images/graphics-card.png");
+  background-size: cover;
 }
-.news-box:nth-of-type(11){
-grid-area: box11
+.news-box:nth-of-type(7) {
+  grid-area: box7;
+}
+.news-box:nth-of-type(7) > div{
+  background: url("images/game-blogging.png");
+  background-size: cover;
+  background-position: bottom;
+}
+.news-box:nth-of-type(8) {
+  grid-area: box8;
+}
+.news-box:nth-of-type(8) > div{
+  background: url("images/game-awards.png");
+  background-size: cover;
+  background-position: top;
+}
+.news-box:nth-of-type(9) {
+  grid-area: box9;
+}
+.news-box:nth-of-type(9) > div{
+  background: url("images/headphones-blue.png");
+  background-size: cover;
+  background-position: right;
+}
+/*==============================================*/
+footer {
+	width: 100%;
+	height: 100px;
+	margin-top: 50px;
+	background: #030c07;
 }
