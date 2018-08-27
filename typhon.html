@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="typhon.css" />
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Mina|Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 
 <body>
@@ -18,15 +20,44 @@
             <img alt='Typhon' src='images/typhon-logo.png' id='logo'></img>
         </a>
         <div id='main-menu'>
-            <a id='products-menu'><span>PRODUCTS</span></a>
-            <a id='support-menu'><span>SUPPORT</span></a>
-            <a id='community-menu'><span>COMMUNITY</span></a>
-            <a id='store-menu'><span>STORE</span></a>
+            <div id='products-menu' class='nav-menu-container'>
+                <p>PRODUCTS</p>
+                <div class='sub-menu-container'>
+                    <a href="">LAPTOPS</a>
+                    <a href="">DESKTOPS</a>
+                    <a href="">KEYBOARDS</a>
+                    <a href="">MICE</a>
+                    <a href="">HEADPHONES</a>
+                </div>
+            </div>
+            <div id='support-menu' class='nav-menu-container'>
+                <p>SOFTWARE</p>
+                <div class='sub-menu-container'>
+                    <a href="">DRIVERS</a>
+                    <a href="">HYDRA GAME BOOSTER</a>
+                    <a href="">SURROUND</a>
+                </div>
+            </div>
+            <div id='community-menu' class='nav-menu-container'>
+                <p>COMMUNITY</p>
+                <div class='sub-menu-container'>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div id='store-menu' class='nav-menu-container'>
+                <p>SUPPORT</p>
+                <div class='sub-menu-container'>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
         </div>
+
         <div id='access-menu'>
-            <div id='search-term'><img class='menu-icon' src='images/search-term.svg' alt='search box'></div>
-            <div id='basket-link'><img class='menu-icon' src='images/shopping-cart.svg' alt='shopping cart'></div>
-            <div id='login-link'><img class='menu-icon' src='images/user-login.svg' alt='login page link'></div>
+            <i class="fas fa-search" id='search-term'></i>
+            <i class="fas fa-shopping-basket" id='basket-link'></i>
+            <i class="fas fa-user" id='login-link'></i>
         </div>
     </nav>
     <!-- carousel container -->
@@ -35,9 +66,11 @@
             <div class='screen-description'>
                 <h3>ARACHNE Desktop</h3>
                 <h1>TAME • THE • BEAST</h1>
-                <h4>Brute strength has earned a new face in the OMEN Desktop. Geared with the latest hardware, easy upgradability,
-                    and advanced cooling, it’s time to experience what PC gaming can offer.</h4>
-                <a href="" class="discover-link"><p>DISCOVER</p><i>❱❱</i></a>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra in elit ut rutrum. Pellentesque
+                    sollicitudin massa eget tortor commodo, vitae venenatis est accumsan. Integer sit amet aliquam enim.
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sit
+                    amet hendrerit sem.</h4>
+                <a href="" class="discover-link"><p>DISCOVER</p><i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
 
@@ -47,71 +80,107 @@
             <div></div>
             <div></div>
         </div>
-        <img class='carousel-direction-arrow' src="images/left-arrow.svg" alt="">
-        <img class='carousel-direction-arrow' src="images/right-arrow.svg" alt="">
+                <i class="fas fa-chevron-circle-left carousel-direction-arrow"></i>
+        <i class="fas fa-chevron-circle-right carousel-direction-arrow"></i>
+
+        <!-- <img class='carousel-direction-arrow' src="images/left-arrow.svg" alt="">
+        <img class='carousel-direction-arrow' src="images/right-arrow.svg" alt=""> -->
     </div>
     <!-- product highlights -->
-    <div id='product-highlights'>
-        <h1>PRODUCT HIGHLIGHTS</h1>
-        <div class="highlight-box">
-            <div class='highlight-description'>
-                <h2><strong>HYDRA LAPTOP</strong></h2>
-                <p>Portable and sleek power wherever you go</p>
+    <div id='highlights-container'>
+        <div id='product-highlights'>
+            <div class="highlight-box">
+                <div class='highlight-description'>
+                    <h2><strong>HYDRA LAPTOP</strong></h2>
+                    <p>Portable and sleek power wherever you go</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <div class='highlight-description'>
+                    <h2><strong>CHARON GAME BOOSTER</strong></h2>
+                    <p>Get the best performance with the least memory</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <div class='highlight-description'>
+                    <h2><strong>PALLAS XH540</strong></h2>
+                    <p>The latest laser technology on a smooth design</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <div class='highlight-description'>
+                    <h2><strong>BANSHEE R540</strong></h2>
+                    <p>Excellent sound with adapted communication</p>
+                </div>
             </div>
         </div>
-        <div class="highlight-box">
-            <div class='highlight-description'>
-                <h2><strong>CHARON GAME BOOSTER</strong></h2>
-                <p>Get the best performance with the least memory</p>
+    </div>
+    <!-- stay on the loop -->
+    <div id='network-section'>
+        <h1>STAY ON TRACK</h1>
+        <div class='news-box'>
+            <h3><strong>INTEL XEON PLATINUM</strong><br>THE LATEST FROM INTEL</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>AMD FX UNLOCKED</strong><br>MAXIMUM PERFORMANCE</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>HYDRA LAPTOP</strong><br>PLAY WHEREVER</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>E3 2018 PALADINS TEAM</strong><br>OFFICIAL SPONSOR</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>4K GAMING</strong><br>EXPERIENE THE DIFFERENCE</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>NVIDIA GEFORCE GTX 1060</strong><br>THE STRONGEST VIDEO CARD ON THE MARKET</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>PLAYING ROUGH</strong><br>READ OUR BLOG</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>THE GAME AWARDS 2016</strong><br>OFFICIAL SPONSOR</h3>
+            <div></div>
+        </div>
+        <div class='news-box'>
+            <h3><strong>HADES BACKBEAT PRO 2</strong><br>WIRELESS HEADPHONES WITH THE SURROUND TECHNOLOGY AND MIC COMM</h3>
+            <div></div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div class='footer-section'>
+                <a class='footer-link' href="">Privacy Statement |</a>
+                <a class='footer-link' href=""> Legal & Regulatory |</a>
+                <a class='footer-link' href=""> Terms & Conditions |</a>
+                <a class='footer-link' href=""> Cookie Policy</a>
+            </div>
+            <div class='footer-section'>
+                <h5>Stay connected</h5>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class='footer-section'>
+                <h5>Sign up for news & offers</h5>
+                <form>
+                    <input type='email' placeholder='email address'>
+                    <buton type='submit'></buton>
+                </form>
             </div>
         </div>
-        <div class="highlight-box">
-            <div class='highlight-description'>
-                <h2><strong>PALLAS XH540</strong></h2>
-                <p>The latest laser technology on a smooth design</p>
-            </div>
-        </div>
-        <div class="highlight-box">
-            <div class='highlight-description'>
-                <h2><strong>BANSHEE R540</strong></h2>
-                <p>Excellent sound with adapted communication</p>
-            </div>
-        </div>
-    </div>
-<!-- stay on the loop -->
-<div id='network-section'>
-    <h1>STAY ON THE TRACK</h1>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-    <div class='news-box'>
-        <div></div>
-    </div>
-</div>
-<footer>
-    
-</footer>
+    </footer>
 
 </body>
 
