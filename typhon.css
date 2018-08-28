@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   box-sizing: border-box;
 }
@@ -7,8 +7,8 @@ body {
 	background: url(honeycomb.svg);
 	background-size: 300%;
 	background-position: center;
-}
-nav {
+} */
+/* nav {
   width: 100%;
   background: white;
   height: 70px;
@@ -43,7 +43,7 @@ nav:hover {
 	display: flex;
   flex-direction: column;
   width: 100%;
-  /*change this to manage submenus*/
+  change this to manage submenus
   overflow: hidden;
 }
 .nav-menu-container{
@@ -77,9 +77,9 @@ height: 100%;
 }
 .sub-menu-container > a:hover {
   background: rgb(204, 243, 203);
-}
+} */
 /*==================================================*/
-#image-container {
+/* #image-container {
   width: 100%;
   position: relative;
 }
@@ -131,7 +131,7 @@ height: 100%;
 	color: #fcba04;
 }
 
-/*=================================================*/
+/*=================================================
 #carousel-loader {
   width: 15%;
   height: 50px;
@@ -151,10 +151,10 @@ height: 100%;
   margin: 6px;
   transform: skewX(162deg);
   box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.49);
-}
+} */
 
 /*=======================================*/
-#access-menu {
+/* #access-menu {
 	width: 10%;
 	display: flex;
 	align-content: center;
@@ -166,24 +166,24 @@ height: 100%;
 #access-menu > div {
   display: inline;
   margin-left: 10px;
-}
-.carousel-direction-arrow {
+} */
+/* .carousel-direction-arrow {
 	position: absolute;
 	top: 50%;
 	bottom: 50%;
-	opacity: 0.2;
+	opacity: 0.1;
 	transition: opacity 200ms;
 	font-size: 3em;
 	padding: 10px;
 }
 .carousel-direction-arrow:hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .carousel-direction-arrow:last-of-type {
   right: 0;
-}
+} */
 /*============================================*/
-#product-highlights {
+/* #product-highlights {
   width: 100%;
   max-width: 1300px;
 	height: 250px;
@@ -239,9 +239,9 @@ background-position: center;
 	border-top: solid #ffffff1a 1px;
 	border-bottom: solid #ffffff1a 1px;
 	padding: 5px;
-}
+} */
 /*======================================*/
-#network-section {
+/* #network-section {
 	margin: auto;
 	width: 80%;
 	display: grid;
@@ -352,9 +352,9 @@ background-position: center;
   background: url("images/headphones-blue.png");
   background-size: cover;
   background-position: right;
-}
+} */
 /*==============================================*/
-footer {
+/* footer {
 	width: 100%;
 	margin-top: 50px;
 	background: #222;
@@ -374,6 +374,12 @@ footer > div {
 .footer-section > h5{
   padding-bottom: 15px;
 }
+.footer-section:nth-of-type(2){
+  border-right: solid #fff3 1px;
+border-left: solid #fff3 1px;
+padding: 0 10px;
+text-align: center;
+}
 .fab {
 	margin: 6px;
 	border-radius: 6px;
@@ -384,4 +390,4 @@ footer > div {
 }
 input[type='email']{
   padding: 4px;
-}
+} */

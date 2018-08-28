@@ -1,0 +1,33 @@
+1.-products page
+    laptops
+    desktops
+    keyboards
+    mice
+    headphones
+10.-Individual Product page
+
+
+
+2.-Drivers
+3.-Hydra Game Booster
+4.-Surround
+
+5.-Community --??--
+6.-Support --??--
+
+//    7.-Search results page
+//    8.-basket page
+//    9.-login page
+
+
+
+
+11.-Privacy statement
+12.-Legal and regulatory
+13.-terms and conditions
+14.-cookie policy
+
+
+15.-gaming blog
+16.-the game awards article
+17.-paladins team sponsorship
