@@ -21,15 +21,14 @@
     max-width: 550px;
 }
 #products-grid {
-	/* height: 1500px; */
 	width: 100%;
 	display: grid;
-	grid-gap: 10px;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: auto;
 	max-width: 1000px;
     margin: auto;
-    color: #cfcfcf;
+	color: #cfcfcf;
+	font-family: 'Share Tech Mono', monospace;
 }
 #products-grid > img{
     width: 100%;
@@ -37,7 +36,29 @@
 #products-grid > h4{
 text-align: center;
 }
+#products-grid > button {
+	background: #d9e330;
+	padding: 10px 15px;
+	border-radius: 10px;
+	margin: auto;
+	text-decoration: none;
+	color: #343333;
+	border: none;
+}
+#products-grid > h2 {
+	grid-column: 1/-1;
+	font-family: "Catamaran", sans-serif;
+	border-bottom: solid 1px #ffffff1a;
+}
 #products-grid > a{
-    background: #d9e330;
-
+	color: #cfcfcf;
+	text-align: center;
+	text-decoration: none;
+}
+#products-grid > p{
+text-justify: auto;
+font-family: "Catamaran", sans-serif;
+}
+#products-grid > *{
+	padding: 15px;
 }
